@@ -45,7 +45,7 @@ const Footer = () => {
             <a href="mailto:bilalarif3739@gmail.com?subject=Let's work together&body=Hi, I'm interested in working with you.">
               <FaEnvelope />
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/bilalarif3739" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
             <a

@@ -186,7 +186,7 @@ function ContactUs() {
             <h3>Social Media</h3>
             <div className="SocialLinks">
               <a
-                href="https://github.com/your-github"
+                href="https://github.com/bilalarif3739"
                 target="_blank"
                 rel="noreferrer"
                 className="SocialLink github"
