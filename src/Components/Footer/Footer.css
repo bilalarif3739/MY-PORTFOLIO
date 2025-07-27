@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+     font-family: 'Inter', sans-serif;
+}
+
+.Footer {
+  background-color: #111010;
+  width: 100%;
+  color: #94a3b8;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.FooterTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.FooterSection h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.FooterSection.about .logoText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.FooterSection.about h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.FooterSection.about h3 span {
+  color: #22c35d;
+}
+
+.FooterSection.about p {
+  max-width: 300px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.FooterSection.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.FooterSection.links li {
+  margin: 6px 0;
+}
+
+.FooterSection.links a {
+  text-decoration: none;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.FooterSection.links a:hover {
+  color: #22c35d;
+}
+
+.FooterSection.connect .socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.FooterSection.connect a {
+  color: #94a3b8;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.FooterSection.connect a:hover {
+  background-color: #22c35d;
+  color: #fff;
+}
+
+.FooterBottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.FooterBottom p {
+  margin: 6px 0;
+}
+
+.FooterBottom .heart {
+  color: #22c35d;
+  margin: 0 4px;
+}
+
+.FooterBottom span {
+  background-color: #222;
+  padding: 4px 8px;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+
+
+/******** RESPONSIVENESS ************/
+
+@media (width <= 510px){
+  .Footer *{
+    justify-content: center;
+    text-align: center;
+  }
+
+}

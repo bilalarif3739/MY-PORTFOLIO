@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --GreenColor: #21b357;
+  --BlueColor: #3e9dfb;
+  --PurpleColor: #d946ef;
+  --Text-Color: #92a1b5;
+  --white-color: #f8fafc;
+  --back-color: #191615;
+  --card-bg: #1f2937;
+}
+
+.ExperienceGrandParent {
+  width: 100%;
+  background-color: var(--back-color);
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MyExperienceHeading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.MyExperienceHeading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -1.2px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  color: var(--white-color);
+}
+
+.MyExperienceHeading p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 672px;
+  text-align: center;
+  color: var(--Text-Color);
+}
+
+.ExperienceParent {
+  max-width: 900px;
+  width: 100%;
+}
+
+.TimelineContainer {
+  position: relative;
+  padding-left: 30px;
+}
+
+.TimelineContainer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--GreenColor) 0%, var(--BlueColor) 50%, var(--PurpleColor) 100%);
+  border-radius: 2px;
+}
+
+.ExperienceCard {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ExperienceCardContent {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin-left: 30px;
+  flex: 1;
+  border-left: 4px solid var(--GreenColor);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ExperienceCard:nth-child(2) .ExperienceCardContent {
+  border-left-color: var(--BlueColor);
+}
+
+.ExperienceCard:nth-child(3) .ExperienceCardContent {
+  border-left-color: var(--PurpleColor);
+}
+
+.ExperienceCardContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ExperienceCardContent h3 {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 32px;
+}
+
+.company {
+  color: var(--Text-Color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.dateTag {
+  display: inline-block;
+  background: var(--GreenColor);
+  color: var(--white-color);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dateTag.blue {
+  background: var(--BlueColor);
+}
+
+.dateTag.purple {
+  background: var(--PurpleColor);
+}
+
+.description {
+  color: var(--Text-Color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techTags button {
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  background-color: #455c79;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techTags button:hover {
+  background-color: #5a6b82;
+}
+
+.timelineConnector {
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--GreenColor);
+  border: 4px solid var(--back-color);
+  z-index: 2;
+}
+
+.timelineConnector.blue {
+  background: var(--BlueColor);
+}
+
+.timelineConnector.purple {
+  background: var(--PurpleColor);
+}
+
+.ExperienceStats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statItem h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--GreenColor);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.statItem:nth-child(2) h2 {
+  color: var(--BlueColor);
+}
+
+.statItem:nth-child(3) h2 {
+  color: var(--PurpleColor);
+}
+
+.statItem:nth-child(4) h2 {
+  color: var(--GreenColor);
+}
+
+.statItem p {
+  color: var(--Text-Color);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/************ RESPONSIVENESS *************/
+
+@media (width <= 768px) {
+  .MyExperienceHeading h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .MyExperienceHeading p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .TimelineContainer {
+    padding-left: 20px;
+  }
+
+  .ExperienceCardContent {
+    margin-left: 20px;
+    padding: 25px;
+  }
+
+  .ExperienceCardContent h3 {
+    font-size: 20px;
+  }
+
+  .ExperienceStats {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .techTags {
+    justify-content: center;
+  }
+}
+
+@media (width <= 480px) {
+  .ExperienceStats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ExperienceCardContent {
+    padding: 20px;
+  }
+
+  .techTags button {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}

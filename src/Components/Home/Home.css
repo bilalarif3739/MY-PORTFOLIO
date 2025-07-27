@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --GreenColor: #21b357;
+  --Text-Color: #92a1b5;
+  --white-color: #f8fafc;
+  --back-color: #191615;
+}
+
+.HomeCompGrandParent {
+  width: 100%;
+  background-color: var(--back-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+
+  .HomeCompParent {
+    margin: 100px 0px;
+
+    max-width: 1000px;
+    /* padding: 120px 0px; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--back-color);
+
+    .Opportunities {
+      display: flex;
+      gap: 10px;
+      outline: 1px solid var(--GreenColor);
+      border-radius: 15px;
+      background-color: #19281c;
+      padding: 5px 7px;
+
+      .OpportunitiesText {
+        color: var(--GreenColor);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 800;
+      }
+    }
+
+    .Name {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      .FirstName {
+        white-space: nowrap;
+        font-size: 72px;
+        font-weight: bolder;
+        line-height: 72px;
+        color: var(--white-color);
+      }
+      .LastName {
+        font-size: 72px;
+        font-weight: bolder;
+        line-height: 72px;
+        color: var(--GreenColor);
+      }
+    }
+
+    .FrontEnd {
+      color: var(--Text-Color);
+
+      h2 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+      }
+    }
+
+    .CraftPara {
+      max-width: 600px;
+
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--Text-Color);
+        text-align: center;
+      }
+    }
+
+    .HomeCompButtons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      .ViewMyWork,
+      .LetsChat {
+        white-space: nowrap;
+        border-radius: 8px;
+        padding: 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 50px;
+        transition: transform 0.3s ease;
+
+        .BtnText {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          margin: 0 15px;
+        }
+
+        .BtnIcon {
+          font-size: 20px;
+        }
+      }
+
+      .ViewMyWork:hover {
+        background-color: #1e9a4f;
+        transform: scale(1.1);
+      }
+
+      .ViewMyWork:active {
+        transform: translateY(0);
+      }
+
+      .LetsChat:hover {
+        background-color: var(--white-color);
+        transform: scale(1.1);
+      }
+
+      .LetsChat:active {
+        transform: translateY(0);
+      }
+
+      .ViewMyWork {
+        background-color: var(--GreenColor);
+        color: var(--white-color);
+
+        .BtnText {
+          margin-right: 15px;
+          margin-left: 0;
+        }
+
+        .BtnIcon {
+          color: var(--white-color);
+        }
+      }
+
+      .LetsChat {
+        padding-left: 32px;
+        padding-right: 32px;
+        background-color: var(--white-color);
+        color: black;
+
+        .BtnText {
+          margin-left: 15px;
+          margin-right: 0;
+        }
+
+        .BtnIcon {
+          color: var(--GreenColor);
+        }
+      }
+    }
+
+    .HomeCompNumbers {
+      display: flex;
+      gap: 35px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .Experience,
+      .ProjectBuilt,
+      .Client {
+        text-align: center;
+
+        .NoText {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          color: var(--Text-Color);
+        }
+        .No {
+          font-size: 30px;
+          line-height: 36px;
+          font-weight: 700;
+          color: var(--GreenColor);
+        }
+      }
+    }
+
+    .HomeCompPassionate {
+      margin-top: 80px;
+      text-align: center;
+
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 24px;
+        color: var(--white-color);
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 400;
+        color: var(--Text-Color);
+        margin-bottom: 50px;
+      }
+
+      .learnMoreBtn {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 15px;
+        border: 2px solid var(--Text-Color);
+        border-radius: 15px;
+        transition: background-color 0.3s ease, color 0.3s ease,
+          transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--GreenColor);
+          border-color: var(--GreenColor);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.slow-pulse {
+  animation: slow-pulse-animation 3s infinite ease-in-out;
+}
+@keyframes slow-pulse-animation {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .HomeCompGrandParent {
+    padding: 0 15px;
+
+    .HomeCompParent {
+      margin: 100px 0px;
+      gap: 20px;
+
+      .Name {
+        flex-direction: column;
+        gap: 0;
+
+        .FirstName,
+        .LastName {
+          font-size: 48px;
+          line-height: 52px;
+        }
+      }
+
+      .FrontEnd h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .CraftPara p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .HomeCompButtons {
+        flex-direction: column;
+        width: 100%;
+
+        .ViewMyWork,
+        .LetsChat {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .HomeCompNumbers {
+        gap: 20px;
+
+        .Experience,
+        .ProjectBuilt,
+        .Client {
+          .No {
+            font-size: 24px;
+            line-height: 30px;
+          }
+          .NoText {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeCompGrandParent {
+    .HomeCompParent {
+      margin: 80px 0px;
+
+      .Name {
+        .FirstName,
+        .LastName {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+
+      .FrontEnd h2 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .CraftPara p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .HomeCompNumbers {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

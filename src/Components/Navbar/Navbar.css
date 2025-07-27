@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.NavParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  background-color: #191615;
+  position: relative;
+  height: 70px;
+}
+
+.NavLogo a {
+  text-decoration: none;
+  color: #22c35d;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* Hamburger Menu Button */
+.HamburgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.HamburgerMenu span {
+  width: 25px;
+  height: 3px;
+  background-color: #94a3b8;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.HamburgerMenu.open span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #22c35d;
+}
+
+.HamburgerMenu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.HamburgerMenu.open span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #22c35d;
+}
+
+/* Desktop Navigation */
+.NavList.desktop ul {
+  display: flex;
+}
+
+.NavList.desktop ul li {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  list-style: none;
+  padding: 15px 12px;
+}
+
+.NavList.desktop ul li:hover {
+  color: #22c35d;
+  background-color: #1a281c;
+  border-radius: 5px;
+}
+
+.NavList.desktop ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.NavList.desktop ul li a.active {
+  color: #22c35d;
+  background-color: #1a281c;
+}
+
+/* Side Menu */
+.SideMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background-color: #191615;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  border-left: 2px solid #22c35d;
+}
+
+.SideMenu.open {
+  right: 0;
+}
+
+.SideMenuContent {
+  padding: 80px 20px 20px;
+}
+
+.SideMenuContent ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SideMenuContent ul li {
+  padding: 0;
+}
+
+.SideMenuContent ul li a {
+  display: block;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.SideMenuContent ul li a:hover,
+.SideMenuContent ul li a.active {
+  color: #22c35d;
+  background-color: #1a281c;
+}
+
+/* Overlay */
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.StickyMiniNavbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #191615;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1100;
+  animation: slideDown 0.3s ease forwards;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.MiniNavLogo a {
+  text-decoration: none;
+  color: #22c35d;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.MiniNavLinks a {
+  margin-left: 45px;
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+.MiniNavLinks a.active,
+.MiniNavLinks a:hover {
+  color: #22c35d;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .NavParent {
+    padding: 0px 20px;
+  }
+
+  .HamburgerMenu {
+    display: flex;
+  }
+
+  .NavList.desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .HamburgerMenu {
+    display: none !important;
+  }
+
+  .SideMenu {
+    display: none;
+  }
+
+  .NavList.desktop {
+    display: block;
+  }
+}
+
+@media (width <= 500px) {
+  .StickyMiniNavbar {
+    padding: 0px 10px;
+  }
+}
+
+/* Hide MiniNavLinks and show Hamburger on mobile */
+@media (max-width: 768px) {
+  .MiniNavLinks.desktop {
+    display: none;
+  }
+
+  .StickyMiniNavbar .HamburgerMenu {
+    display: flex;
+  }
+}
+
+/* Show MiniNavLinks and hide Hamburger on desktop */
+@media (min-width: 769px) {
+  .MiniNavLinks.desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .StickyMiniNavbar .HamburgerMenu {
+    display: none !important;
+  }
+}

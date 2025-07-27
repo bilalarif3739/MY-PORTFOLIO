@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --GreenColor: #21b357;
+  --Text-Color: #92a1b5;
+  --white-color: #f8fafc;
+  --back-color: #191615;
+}
+
+.FeaturedGrandParent {
+  width: 100%;
+  background-color: var(--back-color);
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+
+.MyProjectHeading {
+  text-align: center;
+  h1 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 24px;
+    letter-spacing: -1.2px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--Text-Color);
+    margin-bottom: 30px;
+  }
+}
+
+.FeaturedHeading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.FeaturedHeading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.FeaturedParent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.FeaturedCard {
+  background-color: #201d1d;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2a2626;
+}
+
+.FeaturedCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.FeaturedImage {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.FeaturedImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.FeaturedCard:hover .FeaturedImage img {
+  transform: scale(1.05);
+}
+
+.FeaturedCardContent {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.FeaturedTitle h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.FeaturedDescription p {
+  font-size: 14px;
+  color: var(--Text-Color);
+}
+
+.FeaturedTechStack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.FeaturedTechBtn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(33, 179, 87, 0.1);
+  color: var(--GreenColor);
+  cursor: default;
+  transition: all 0.2s ease;
+}
+
+.FeaturedTechBtn:hover {
+  background-color: rgba(33, 179, 87, 0.2);
+}
+
+.FeaturedSocialLinks {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.FeaturedSocialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--GreenColor);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-decoration: none;
+}
+
+.FeaturedSocialBtn:hover {
+  background-color: #1e9a4f;
+  transform: translateY(-2px);
+}
+
+.FeaturedSocialBtn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .FeaturedGrandParent {
+    padding: 20px 10px;
+  }
+
+  .FeaturedParent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .FeaturedHeading h2 {
+    font-size: 24px;
+  }
+
+  .FeaturedCardContent {
+    padding: 20px;
+  }
+
+  .FeaturedSocialLinks {
+    flex-direction: column;
+  }
+
+  .FeaturedSocialBtn {
+    flex: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .FeaturedParent {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (width <= 660px) {
+  .FeaturedTechStack {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .FeaturedParent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .FeaturedParent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1401px) {
+  .FeaturedParent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
