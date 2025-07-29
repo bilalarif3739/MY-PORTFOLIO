@@ -159,7 +159,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 40px;
   z-index: 1100;
   animation: slideDown 0.3s ease forwards;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -176,13 +176,28 @@ body {
   margin-left: 45px;
   text-decoration: none;
   color: #94a3b8;
-  font-size: 17px;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
 .MiniNavLinks a.active,
 .MiniNavLinks a:hover {
   color: #22c35d;
+}
+
+.CV-ADD {
+  padding: 0px !important;
+}
+
+.CV-BUTTON {
+  padding: 0px;
+  margin-top: 5px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #191615;
+  color: white;
+  font-weight: 900;
 }
 
 @keyframes slideDown {

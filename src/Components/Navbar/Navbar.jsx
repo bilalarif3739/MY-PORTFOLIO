@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import resumeFile from '../../assets/M.BILAL-ARIF-CV.pdf';
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -75,6 +76,11 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <li className="CV-ADD">
+              <a href={resumeFile} download>
+                <button className="CV-BUTTON">RESUME</button>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -116,6 +122,11 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="CV-ADD">
+                <a href={resumeFile} download onClick={closeMenu}>
+                  <button className="CV-BUTTON">RESUME</button>
+                </a>
               </li>
             </ul>
           </div>
@@ -164,6 +175,9 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            <a href={resumeFile} download>
+              <button className="CV-BUTTON">RESUME</button>
+            </a>
           </div>
         </div>
       )}
