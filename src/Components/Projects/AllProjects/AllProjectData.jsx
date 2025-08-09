@@ -1,6 +1,7 @@
 import {React} from "react";
 import WebsitePic1 from '../../../assets/CKPic.png';
 import WebsitePic2 from '../../../assets/DeveltroPic.png';
+import WebsitePic3 from '../../../assets/PMD.png'
 import "./AllProjects.css";
 import AllProjects from "./AllProjects";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -35,13 +36,14 @@ function AllProjectData() {
       liveLink: "https://develtro.com/",
     },
     {
-      title: "Portfolio Website",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop",
-      description: "A responsive portfolio website showcasing creative projects with smooth animations, dark mode toggle, and contact form integration.",
+      title: "Platinum Marketing Distribution",
+      image: WebsitePic3,
+      description: "Platinum Marketing Distribution is a company specializing in the marketing, repacking, and distribution of consumer food products.",
       Btn1: "React",
       Btn2: "Framer Motion",
       Btn3: "SCSS",
       Btn4: "+1",
+      liveLink: "https://platinummarketingdistribution.com/",
     },
     {
       title: "Weather App",
