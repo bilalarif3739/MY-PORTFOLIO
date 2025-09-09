@@ -2,6 +2,7 @@ import {React} from "react";
 import WebsitePic1 from '../../../assets/CKPic.png';
 import WebsitePic2 from '../../../assets/DeveltroPic.png';
 import WebsitePic3 from '../../../assets/PMD.png'
+import WebsitePic4 from '../../../assets/RealEstatewebsite.png'
 import "./AllProjects.css";
 import AllProjects from "./AllProjects";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -46,23 +47,25 @@ function AllProjectData() {
       liveLink: "https://platinummarketingdistribution.com/",
     },
     {
-      title: "Weather App",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
-      description: "A beautiful weather application with location-based forecasts, interactive maps, and personalized weather alerts for multiple cities.",
-      Btn1: "Angular",
-      Btn2: "TypeScript",
-      Btn3: "Bootstrap",
-      Btn4: "+2",
+      title: "Real Estate Website",
+      image: WebsitePic4,
+      description: "A dynamic real estate platform offering users an intuitive interface to explore property listings, complete with advanced search filters and detailed property information. Designed to enhance user experience with a responsive layout and seamless navigation.",
+      Btn1: "React js",
+      Btn2: "GSAP",
+      Btn3: "Tailwind CSS",
+      Btn4: "+3",
+      liveLink: "http://167.99.24.75:3001/",
     },
     // {
-    //   title: "Fitness Tracker",
-    //   image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
-    //   description: "A comprehensive fitness tracking app with workout plans, progress monitoring, nutrition tracking, and social sharing features.",
-    //   Btn1: "React Native",
-    //   Btn2: "Firebase",
-    //   Btn3: "Chart.js",
-    //   Btn4: "+3",
+    //   title: "Weather App",
+    //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
+    //   description: "A beautiful weather application with location-based forecasts, interactive maps, and personalized weather alerts for multiple cities.",
+    //   Btn1: "Angular",
+    //   Btn2: "TypeScript",
+    //   Btn3: "Bootstrap",
+    //   Btn4: "+2",
     // },
+    
     // {
     //   title: "Chat Application",
     //   image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=250&fit=crop",
