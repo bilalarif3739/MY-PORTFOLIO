@@ -1,7 +1,7 @@
 import { React } from "react";
-import WebsitePic1 from "../../../assets/CKPic.png";
-import WebsitePic2 from "../../../assets/DeveltroPic.png";
-import WebsitePic4 from "../../../assets/RealEstatewebsite.png";
+import WebsitePic1 from "../../../assets/CKPic.jpeg";
+import WebsitePic2 from "../../../assets/DeveltroPic.jpeg";
+import WebsitePic4 from "../../../assets/RealEstatewebsite.jpeg";
 
 import "./FeaturedProjects.css";
 import FeaturedProjects from "./FeaturedProjects";

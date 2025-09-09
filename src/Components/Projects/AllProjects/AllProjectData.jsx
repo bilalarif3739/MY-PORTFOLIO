@@ -1,8 +1,8 @@
 import {React} from "react";
-import WebsitePic1 from '../../../assets/CKPic.png';
-import WebsitePic2 from '../../../assets/DeveltroPic.png';
-import WebsitePic3 from '../../../assets/PMD.png'
-import WebsitePic4 from '../../../assets/RealEstatewebsite.png'
+import WebsitePic1 from '../../../assets/CKPic.jpeg';
+import WebsitePic2 from '../../../assets/DeveltroPic.jpeg';
+import WebsitePic3 from '../../../assets/PMD.jpeg'
+import WebsitePic4 from '../../../assets/RealEstatewebsite.jpeg'
 import "./AllProjects.css";
 import AllProjects from "./AllProjects";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
