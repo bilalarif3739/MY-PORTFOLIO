@@ -44,17 +44,16 @@ const Story = () => {
             <div className="MyStoryDescription">
               <h3>My Story</h3>
               <p>
-                Hello! I'm Bilal Arif, a passionate frontend developer with over
-                1 year of experience creating digital experiences that matter.
-                My journey began with a curiosity about how websites work, which
-                quickly evolved into a deep passion for crafting beautiful,
-                functional, and accessible web applications. <br /> <br />I
-                specialize in React and Javascript, with a strong focus on
-                modern development practices, performance optimization, and user
-                experience. I believe that great software is not just about
-                writing code—it's about solving real problems and creating
-                meaningful connections between users and technology. <br />{" "}
-                <br />
+                Hello! I'm Bilal Arif, a frontend developer with hands-on
+                experience in building responsive, user-focused web
+                applications. My journey began with a curiosity about how
+                websites work, which quickly grew into a passion for crafting
+                seamless digital experiences. <br /> I specialize in React.js, Next.js, JavaScript, and
+                TypeScript, with a solid foundation in HTML5, CSS3, Tailwind
+                CSS, and Bootstrap. From developing SaaS applications to
+                designing scalable component architectures, I focus on writing
+                clean, optimized code and building solutions that balance
+                performance, accessibility, and user experience.  <br />
                 When I'm not coding, you'll find me exploring new technologies,
                 contributing to open-source projects, or enjoying a good cup of
                 coffee while sketching out ideas for my next project.

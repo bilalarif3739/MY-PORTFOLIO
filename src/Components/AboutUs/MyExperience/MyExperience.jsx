@@ -35,51 +35,56 @@ const MyExperience = () => {
             <div className="timelineConnector green"></div>
           </div> */}
 
-          <div className="ExperienceCard">
-            <div className="ExperienceCardContent">
-              <h3>Junior Web Developer</h3>
-              <p className="company">Develtro</p>
-              <div className="dateTag blue">
-                <span>2025 - Present</span>
-              </div>
-              <p className="description">
-                Built responsive user interfaces using React.js and styled with
-                Bootstrap and Tailwind CSS. Collaborated with backend teams to
-                integrate REST APIs and ensure optimal performance across
-                different devices.
-              </p>
-              <div className="techTags">
-                <button>React.js</button>
-                <button>Bootstrap</button>
-                <button>REST APIs</button>
-                <button>JavaScript</button>
-              </div>
-            </div>
-            <div className="timelineConnector blue"></div>
-          </div>
+<div className="ExperienceCard">
+  <div className="ExperienceCardContent">
+    <h3>Associate Web Developer</h3>
+    <p className="company">Develtro</p>
+    <div className="dateTag blue">
+      <span>Jul 2025 - Present</span>
+    </div>
+    <p className="description">
+      Contributed to a SaaS task management app by implementing new features, 
+      integrating APIs, and ensuring responsive, user-friendly design. 
+      Collaborated on multiple dynamic websites using React.js, Next.js, 
+      TypeScript, and Tailwind CSS while following modern workflows and 
+      best practices.
+    </p>
+    <div className="techTags">
+      <button>React.js</button>
+      <button>Next.js</button>
+      <button>TypeScript</button>
+      <button>Tailwind CSS</button>
+      <button>API Integration</button>
+    </div>
+  </div>
+  <div className="timelineConnector blue"></div>
+</div>
 
-          <div className="ExperienceCard">
-            <div className="ExperienceCardContent">
-              <h3>Web Development Intern</h3>
-              <p className="company">Commerce Kind</p>
-              <div className="dateTag purple">
-                <span>2024 - 2025</span>
-              </div>
-              <p className="description">
-                Started my professional journey learning modern web development
-                practices. Worked on various client projects using HTML, CSS,
-                JavaScript, and gained experience with database management and
-                version control.
-              </p>
-              <div className="techTags">
-                <button>HTML/CSS</button>
-                <button>JavaScript</button>
-                <button>MySQL</button>
-                <button>Git</button>
-              </div>
-            </div>
-            <div className="timelineConnector purple"></div>
-          </div>
+<div className="ExperienceCard">
+  <div className="ExperienceCardContent">
+    <h3>Web Development Intern</h3>
+    <p className="company">Commerce Kind</p>
+    <div className="dateTag purple">
+      <span>Mar 2025 - Jun 2025</span>
+    </div>
+    <p className="description">
+      Developed the Commerce Kind website using React.js with a clean, 
+      props-driven architecture. Created a global styling system with CSS 
+      variables, integrated EmailJS for form submissions, and embedded Google 
+      Maps API for accessibility. Improved performance through Lazy Loading 
+      and React Suspense.
+    </p>
+    <div className="techTags">
+      <button>React.js</button>
+      <button>CSS</button>
+      <button>EmailJS</button>
+      <button>Google Maps API</button>
+      <button>Performance Optimization</button>
+    </div>
+  </div>
+  <div className="timelineConnector purple"></div>
+</div>
+
         </div>
       </div>
 
@@ -89,7 +94,7 @@ const MyExperience = () => {
           <p>Year Experience</p>
         </div>
         <div className="statItem">
-          <h2>5+</h2>
+          <h2>15+</h2>
           <p>Projects Completed</p>
         </div>
         <div className="statItem">

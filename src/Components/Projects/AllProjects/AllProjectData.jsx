@@ -1,7 +1,7 @@
 import {React} from "react";
 import WebsitePic1 from '../../../assets/CKPic.jpeg';
 import WebsitePic2 from '../../../assets/DeveltroPic.jpeg';
-import WebsitePic3 from '../../../assets/PMD.jpeg'
+import WebsitePic3 from '../../../assets/PMD.png'
 import WebsitePic4 from '../../../assets/RealEstatewebsite.jpeg'
 import "./AllProjects.css";
 import AllProjects from "./AllProjects";
@@ -37,14 +37,14 @@ function AllProjectData() {
       liveLink: "https://develtro.com/",
     },
     {
-      title: "Platinum Marketing Distribution",
+      title: "Tijara Marketing Distribution",
       image: WebsitePic3,
-      description: "Platinum Marketing Distribution is a company specializing in the marketing, repacking, and distribution of consumer food products.",
+      description: "Tijara Marketing Distribution is a company specializing in the marketing, repacking, and distribution of consumer food products.",
       Btn1: "React",
       Btn2: "Framer Motion",
       Btn3: "SCSS",
       Btn4: "+1",
-      liveLink: "https://platinummarketingdistribution.com/",
+      liveLink: "https://tijaradistribution.com/",
     },
     {
       title: "Real Estate Website",

@@ -63,7 +63,8 @@ const Footer = () => {
       <div className="FooterBottom">
         <p>
           Built with <FaHeart className="heart" /> using <span>React.js</span>,{" "}
-          <span>Node.js</span>, <span>Tailwind CSS</span>
+          {/* <span></span>, */}
+           <span>Tailwind CSS</span>
         </p>
         <p className="powered">☕ Powered by caffeine and code</p>
         <p>
