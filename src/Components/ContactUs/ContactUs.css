@@ -276,7 +276,7 @@ body {
 }
 
 .StatusIndicator {
-  width: 12px;
+  width: 20px;
   height: 12px;
   border-radius: 50%;
   background: var(--GreenColor);
