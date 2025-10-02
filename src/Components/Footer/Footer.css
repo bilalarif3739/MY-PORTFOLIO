@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   padding: 0px;
   margin: 0px;
 }
 
-body{
-     font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .Footer {
@@ -13,7 +13,7 @@ body{
   width: 100%;
   color: #94a3b8;
   padding: 40px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .FooterTop {
@@ -54,6 +54,7 @@ body{
 
 .FooterSection.links ul {
   list-style: none;
+  text-align: center;
   padding: 0;
 }
 
@@ -114,14 +115,11 @@ body{
   margin: 0 3px;
 }
 
-
-
 /******** RESPONSIVENESS ************/
 
-@media (width <= 510px){
-  .Footer *{
+@media (width <= 510px) {
+  .Footer * {
     justify-content: center;
     text-align: center;
   }
-
 }
