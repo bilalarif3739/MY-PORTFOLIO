@@ -38,9 +38,9 @@ const MyExperience = () => {
 <div className="ExperienceCard">
   <div className="ExperienceCardContent">
     <h3>Associate Web Developer</h3>
-    <p className="company">Develtro</p>
+    <p className="company">Commerce Kind</p>
     <div className="dateTag blue">
-      <span>Jul 2025 - Present</span>
+      <span>Jun 2025 - Present</span>
     </div>
     <p className="description">
       Contributed to a SaaS task management app by implementing new features, 
@@ -65,7 +65,7 @@ const MyExperience = () => {
     <h3>Web Development Intern</h3>
     <p className="company">Commerce Kind</p>
     <div className="dateTag purple">
-      <span>Mar 2025 - Jun 2025</span>
+      <span>Mar 2025 - May 2025</span>
     </div>
     <p className="description">
       Developed the Commerce Kind website using React.js with a clean, 
