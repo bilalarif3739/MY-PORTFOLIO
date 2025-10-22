@@ -190,14 +190,14 @@ body {
 }
 
 .CV-BUTTON {
-  padding: 0px;
+  padding: 8px;
   margin-top: 5px;
   height: 40px;
   border-radius: 5px;
   border: 2px solid white;
   background-color: #191615;
   color: white;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @keyframes slideDown {

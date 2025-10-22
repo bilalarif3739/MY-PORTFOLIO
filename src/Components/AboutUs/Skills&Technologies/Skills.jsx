@@ -22,18 +22,21 @@ function Skills() {
           </div>
           <div className="skillMiddle">
             <div className="skillMiddleLeft">
-              <button>React.Js</button>
-              <button>JavaScript (Es6+)</button>
-              <button>Bootstrap</button>
+              <button className="btn-skill">React.Js</button>
+              <button className="btn-skill">JavaScript (Es6+)</button>
+              <button className="btn-skill">Bootstrap</button>
+              <button className="btn-skill">Gsap</button>
+
             </div>
             <div className="skillMiddleRight">
-              <button>HTML5 & CSS3</button>
-              <button>Tailwind CSS</button>
-              <button>Responsive Design</button>
+              <button className="btn-skill">Next Js</button>
+              <button className="btn-skill">HTML5 & CSS3</button>
+              <button className="btn-skill">Tailwind CSS</button>
+              <button className="btn-skill">Responsive Design</button>
             </div>
           </div>
         </div>
-        <div className="SkillNO2 card-hover">
+        {/* <div className="SkillNO2 card-hover">
           <div className="skillUpper">
             <FontAwesomeIcon icon={faDatabase} className="icon green" />
             <h4>Backend Development</h4>
@@ -51,8 +54,8 @@ function Skills() {
               <button>Server Architecture</button>
             </div>
           </div>
-        </div>
-        <div className="SkillNO3 card-hover">
+        </div> */}
+        {/* <div className="SkillNO3 card-hover">
           <div className="skillUpper">
             <FontAwesomeIcon icon={faGlobe} className="icon purple" />
             <h4>Full Stack Integration</h4>
@@ -70,7 +73,7 @@ function Skills() {
               <button>Deployment</button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

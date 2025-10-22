@@ -31,11 +31,11 @@ const Story = () => {
               <p>Frontend Developer</p>
               <div className="ProfileBtn">
                 <span>
-                  <button> Available for hire</button>
+                  <button className="btn-skill"> Available for hire</button>
                 </span>
                 <span>
                   {" "}
-                  <button> Remote friendly</button>
+                  <button className="btn-skill"> Remote friendly</button>
                 </span>
               </div>
             </div>
