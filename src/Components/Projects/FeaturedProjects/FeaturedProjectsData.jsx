@@ -36,7 +36,8 @@ function FeaturedProjectsData() {
       Btn2: "GSAP",
       Btn3: "Tailwind CSS",
       Btn4: "+3",
-      liveLink: "http://167.99.24.75:3001/",
+      liveLink: "https://bilalrealestatewebsite.netlify.app/",
+
     },
     // {
     //   title: "Develtro Wesbite",
