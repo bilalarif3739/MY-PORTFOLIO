@@ -1,7 +1,7 @@
 import {React} from "react";
 import WebsitePic1 from '../../../assets/CKPic.jpeg';
 import WebsitePic2 from '../../../assets/DeveltroPic.jpeg';
-import WebsitePic3 from '../../../assets/PMD.png'
+import WebsitePic3 from '../../../assets/PMD1.png'
 import WebsitePic4 from '../../../assets/RealEstatewebsite.jpeg'
 import "./AllProjects.css";
 import AllProjects from "./AllProjects";
@@ -27,14 +27,14 @@ function AllProjectData() {
       liveLink: "https://commercekind.com/",
     },
     {
-      title: "Tijara Marketing Distribution",
+      title: "Platinum Marketing Distribution",
       image: WebsitePic3,
-      description: "Developed a website for Tijara Marketing Distribution showcasing their tailored distribution strategies and supply chain optimization solutions for global market penetration.",
+      description: "Developed a website for Platinum Marketing Distribution showcasing their tailored distribution strategies and supply chain optimization solutions for global market penetration.",
       Btn1: "React",
       Btn2: "Framer Motion",
       Btn3: "SCSS",
       Btn4: "+1",
-      liveLink: "https://tijaradistribution.com/",
+      liveLink: "https://platinummarketingdistribution.com/",
     },
     {
       title: "Real Estate Website",
