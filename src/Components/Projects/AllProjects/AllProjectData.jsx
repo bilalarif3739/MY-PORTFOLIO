@@ -89,7 +89,7 @@ function AllProjectData() {
       Btn2: "CSS",
       Btn3: "JavaScript",
       Btn4: "+2",
-      liveLink: "https://bilalbhs.netlify.app/",
+      liveLink: "https://bazelworxx.netlify.app/",
     },
 
     {
