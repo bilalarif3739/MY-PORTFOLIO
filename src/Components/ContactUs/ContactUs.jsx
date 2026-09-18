@@ -33,10 +33,10 @@ function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_zwdluwm",     // ← Replace with actual service ID
-        "template_9fna9yt",    // ← Replace with actual template ID
+        "service_bbf0qg6", // ← Replace with actual service ID
+        "template_9fna9yt", // ← Replace with actual template ID
         formRef.current,
-        "D1KmKcvfCd8MfoR5Y"      // ← Replace with actual public key
+        "D1KmKcvfCd8MfoR5Y", // ← Replace with actual public key
       )
       .then(
         (result) => {
@@ -46,7 +46,7 @@ function ContactUs() {
         (error) => {
           console.log("Failed to send message", error.text);
           alert("Failed to send message. Please try again later.");
-        }
+        },
       );
 
     setFormData({
