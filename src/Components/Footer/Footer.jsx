@@ -16,7 +16,7 @@ const Footer = () => {
             </h3>
           </div>
           <p>
-            Front-End developer crafting digital experiences with modern
+            Full developer crafting digital experiences with modern
             technologies and creative solutions.
           </p>
         </div>

@@ -24,18 +24,19 @@ const Home = () => {
         </div>
 
         <div className="Name">
-          <div className="FirstName">Hi, I'm</div>
+          <div className="FirstName">Hi, I'm </div>
           <div className="LastName">
             <Typewriter
               options={{
                 strings: [
-                  "Bilal Arif",
-                  "a Web Developer",
-                  "a React Js Developer",
+                  " Bilal Arif",
+                  " a Web Developer",
+                  " a React/Next Js Developer",
+                  " a PHP/Laravel Developer",
                 ],
                 autoStart: true,
                 loop: true,
-                delay: 100,
+                delay: 90,
                 deleteSpeed: 80,
                 pauseFor: 2000,
               }}
@@ -44,7 +45,7 @@ const Home = () => {
         </div>
 
         <div className="FrontEnd">
-          <h2>Frontend Developer & UI/UX Enthusiast</h2>
+          <h2>FullStack Web Developer</h2>
         </div>
 
         <div className="CraftPara">
@@ -73,11 +74,11 @@ const Home = () => {
 
         <div className="HomeCompNumbers">
           <div className="Experience">
-            <div className="No">1+</div>
+            <div className="No">2+</div>
             <div className="NoText">Years Experience</div>
           </div>
           <div className="ProjectBuilt">
-            <div className="No">5+</div>
+            <div className="No">10+</div>
             <div className="NoText">Projects Built</div>
           </div>
           <div className="Client">
